@@ -1,10 +1,10 @@
-# Wineorc v1.0
+# Wineorc v1.1
 Some simple Shell scripts to setup ORC revivals semi-automatically on Linux.
 
 These scripts are not supported in any way, shape or form by the official devs of these revivals.
 
-# What this does and doesn't do
-This script will download dependencies, register URI and download the chosen revival, but won't install it for you fully automatically. See "How to use it" to install it fully.
+# What this does
+This script will download dependencies, register URI and install the revival of choice.
 
 # Dependencies
 The needed packages are:
@@ -12,7 +12,8 @@ The needed packages are:
 - wget
 - unzip (for Itteblox only)
 
-If you are running any form of Ubuntu (that includes Linux Mint and PopOS), Manjaro (but not arch/artix, that is an issue), Fedora or Gentoo the script will automatically install the dependencies for you.
+If you are running any form of Ubuntu (that includes Linux Mint and PopOS), Manjaro, Fedora or Gentoo the script will automatically install the dependencies for you.
+
 If you aren't, install them manually via your package manager.
 
 # How to use it
@@ -20,20 +21,11 @@ If you aren't, install them manually via your package manager.
 0. If your distro is not listed above then install the dependencies.
 1. Download the latest release from the Releases page (or just clone this repo via git)
 2. Open a terminal and cd into where the script is downloaded.
-3. Run `chmod +x *.sh` (which will make all shell files in that directory executable)
+3. Run `chmod +x *.sh` (which will make all Shell files in that directory executable)
 4. Depending on which revival you want to install, run the following commands:
-- `sudo ./tadah-helper.sh` for Tadah
-- `sudo ./itteblox-helper.sh` for Itteblox
-
-The scripts must be ran as root for the time being, but that's something I'll work on.
-
-5. Once the installer is done, either
-- `unzip itteblox.zip && wine ItteBloxURI.exe` to install Itteblox
-- `wine TadahFourteen.exe` to install Tadah
-
-These should all be ran as a non-root user.
-
-6. Once installed, play a game and it should work!
+- `./tadah-helper.sh` for Tadah
+- `./itteblox-helper.sh` for Itteblox
+5. Once installed, play a game and it should work!
 
 # Troubleshooting
 If the game crashes/doesn't launch, try to
@@ -46,13 +38,9 @@ If those don't work, DM me on Discord: DarDarDar#3429.
 # Known issues
 Itteblox 2013 studio doesn't work
 
-Itteblox 2016 locks the mouse after either the right mouse button or shift lock is activated
+Itteblox 2016 locks the mouse after either the right mouse button or shift lock is activated 
 
-Script doesn't do everything it could do
-
-Script doesn't automatically install dependencies on Arch/Artix (even though it really should)
-
-Script has to be ran as root (once again, am working on it)
+(these two are probably unfixable, sadly)
 
 # Credits
 calones for helping me, and putting up with me being dumb
