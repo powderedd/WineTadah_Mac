@@ -8,6 +8,7 @@ This script will download dependencies, register URI and install the revival of 
 
 # Dependencies
 The needed packages are:
+- sudo (probably installed on most systems already, but if not please install it, because even with a supported distro the script won't install it for you)
 - The latest wine (obv, preferably wine-staging)
 - wget
 - unzip (for Itteblox only)
