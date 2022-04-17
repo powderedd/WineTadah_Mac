@@ -44,6 +44,7 @@ If those don't work, DM me on Discord: DarDarDar#3429.
 # Known issues
 Itteblox 2013 studio doesn't work
 Itteblox 2016 locks the mouse after either the right mouse button or shift lock is activated
+Script doesn't automatically install dependencies on Arch/Artix (even though it really should)
 Script has to be ran as root (once again, am working on it)
 
 # Credits
