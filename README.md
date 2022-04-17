@@ -4,7 +4,7 @@ Some simple Shell scripts to setup ORC revivals semi-automatically on Linux.
 These scripts are not supported in any way, shape or form by the official devs of these revivals.
 
 # What this does and doesn't do
-This script will download dependencies, register URI and download the chosen revival, but won't install it for you.
+This script will download dependencies, register URI and download the chosen revival, but won't install it for you automatically. See "How to use it" to install it fully.
 
 # Dependencies
 The needed packages are:
