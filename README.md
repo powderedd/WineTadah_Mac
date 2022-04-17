@@ -30,7 +30,9 @@ The scripts must be ran as root for the time being, but that's something I'll wo
 5. Once the installer is done, either
 - `unzip itteblox.zip && wine ItteBloxURI.exe` to install Itteblox
 - `wine TadahFourteen.exe` to install Tadah
+
 These should all be ran as a non-root user.
+
 6. Once installed, play a game and it should work!
 
 # Troubleshooting
