@@ -24,7 +24,9 @@ If you aren't, install them manually via your package manager.
 4. Depending on which revival you want to install, run the following commands:
 - `sudo ./tadah-helper.sh` for Tadah
 - `sudo ./itteblox-helper.sh` for Itteblox
+
 The scripts must be ran as root for the time being, but that's something I'll work on.
+
 5. Once the installer is done, either
 - `unzip itteblox.zip && wine ItteBloxURI.exe` to install Itteblox
 - `wine TadahFourteen.exe` to install Tadah
@@ -36,6 +38,7 @@ If the game crashes/doesn't launch, try to
 1. Run the installer again (make sure you're running it as non-root)
 2. Make sure the OS is set to `Windows 10` in `winecfg`
 3. Make sure all necessary optional wine dependencies are installed https://wiki.winehq.org/Building_Wine#Satisfying_Build_Dependencies
+
 If those don't work, DM me on Discord: DarDarDar#3429.
 
 # Known issues
