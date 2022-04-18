@@ -4,7 +4,7 @@ Some simple Shell scripts to setup ORC revivals semi-automatically on Linux.
 These scripts are not supported in any way, shape or form by the official devs of these revivals.
 
 # What this does
-This script will download dependencies, register URI and install the revival of choice.
+This script will download dependencies, register URI and install the revival of choice. It can also uninstall the revival of choice.
 
 # Dependencies
 The needed packages are:
@@ -27,6 +27,8 @@ If you aren't, install them manually via your package manager.
 - `./tadah-helper.sh` for Tadah
 - `./itteblox-helper.sh` for Itteblox
 5. Once installed, play a game and it should work!
+
+If you want to uninstall a revival, run the script with the parameter "uninstall". E.g, `./tadah-helper.sh uninstall`.
 
 # Troubleshooting
 If the game crashes/doesn't launch, try to
