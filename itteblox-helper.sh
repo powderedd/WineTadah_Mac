@@ -63,6 +63,7 @@ sudo emerge --ask virtual/wine-staging net-misc/wget
 fi
 
 echo "The URI for Itteblox will now be made. "
+sleep 1
 touch itteblox.desktop
 echo "[Desktop Entry]" >> itteblox.desktop
 echo "Name=Itteblox Player" >> itteblox.desktop
@@ -73,6 +74,19 @@ echo "MimeType=x-scheme-handler/itblox" >> itteblox.desktop
 sudo mv itteblox.desktop /usr/share/applications
 sudo update-desktop-database
 cat /usr/share/applications/itteblox.desktop
+
+if [ "$1" == "dxvk" ] || [ "$2" == "dxvk" ]
+then
+echo "The script will now install DXVK. "
+wget -nc https://github.com/doitsujin/dxvk/releases/download/v1.10.1/dxvk-1.10.1.tar.gz
+tar -xf dxvk-1.10.1.tar.gz
+cd dxvk-1.10.1
+export WINEPREFIX=$HOME/.wine
+./setup_dxvk.sh install
+cd ..
+rm dxvk-1.10.1.tar.gz
+rm dxvk-1.10.1 -rf
+fi
 
 echo "winecfg will now open. Set the OS to be Windows 10. "
 sleep 3
