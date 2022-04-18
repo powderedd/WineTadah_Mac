@@ -12,7 +12,7 @@ echo "Uninstallation done. Run the script like normal if you'd like to reinstall
 exit
 fi
 
-echo "This is the Itteblox Installer helper, v1.2. "
+echo "This is the Itteblox Installer helper, v1.5. "
 echo "Before installation begins, some dependencies need to be installed. If anything prompts for a password, enter it, and if there's a yes/no answer, enter yes. "
 sleep 3
 
