@@ -1,6 +1,18 @@
 #!/bin/bash
 #Made by DarDarDar, 2022
 
+if [ "$1" == "uninstall" ] || [ "$1" == "uninstaller" ]
+then
+echo "Uninstalling Tadah in 3 seconds... "
+sleep 3
+rm $HOME/.wine/drive_c/users/$USER/AppData/Local/Tadah -rf
+rm $HOME/.wine/drive_c/users/$USER/AppData/Local/Ta2014 -rf
+sudo rm /usr/share/applications/tadah.desktop
+sudo update-desktop-database
+echo "Uninstallation done. Run the script like normal if you'd like to reinstall. "
+exit
+fi
+
 echo "This is the Tadah Installer helper, v1.1. "
 echo "Before installation begins, some dependencies need to be installed. If anything prompts for a password, enter it, and if there's a yes/no answer, enter yes. "
 sleep 3
