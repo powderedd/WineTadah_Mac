@@ -3,32 +3,39 @@
 
 if [ "$1" == "uninstall" ] || [ "$1" == "uninstaller" ]
 then
-echo "Uninstalling Tadah in 3 seconds.. "
+echo "Uninstalling Placeholder in 3 seconds.. "
 sleep 3
+wget -nc https://placeholder16.tk/setup/PlaceholderInstaller.exe
 read -p "If you'd like to use a custom wineprefix, please enter y. Otherwise, enter n. " THING
 if [ $THING == "y" ]
 then
 read -p "Please enter the custom wineprefix. " PREFIX
-rm $PREFIX/drive_c/users/$USER/AppData/Local/Tadah -rf
-rm $PREFIX/drive_c/users/$USER/AppData/Local/Ta2014 -rf
-sudo rm /usr/share/applications/tadah.desktop
+echo "When the installer is run, please select the Uninstall option and follow the prompts, otherwise this won't work. "
+sleep 3
+WINEPREFIX=$PREFIX wine PlaceholderInstaller.exe
+rm $HOME/.wine/drive_c/users/$USER/AppData/Roaming/Placeholder -rf
+sudo rm /usr/share/applications/placeholder.desktop
 sudo update-desktop-database
+rm PlaceholderInstaller.exe
 echo "Uninstallation done. Run the script like normal if you'd like to reinstall. "
 exit
 fi
 if [ $THING == "n" ]
 then
-rm $HOME/.wine/drive_c/users/$USER/AppData/Local/Tadah -rf
-rm $HOME/.wine/drive_c/users/$USER/AppData/Local/Tadah -rf
-sudo rm /usr/share/applications/tadah.desktop
+echo "When the installer is run, please select the Uninstall option and follow the prompts, otherwise this won't work. "
+sleep 3
+wine PlaceholderInstaller.exe
+rm $HOME/.wine/drive_c/users/$USER/AppData/Roaming/Placeholder -rf
+sudo rm /usr/share/applications/placeholder.desktop
 sudo update-desktop-database
+rm PlaceholderInstaller.exe
 echo "Uninstallation done. Run the script like normal if you'd like to reinstall. "
 exit
 fi
 fi
 
-echo "This is the Tadah Installer helper, v1.6. "
-echo "Before installation begins, some dependencies need to be installed. If anything prompts for a password, enter it, and if there's a yes/no answer, enter yes. "
+echo "This is the Placeholder Installer helper, v1.6. "
+echo "Before installation begins, some dependencies may need to be installed. If anything prompts for a password, enter it, and if there's a yes/no answer, enter yes. "
 sleep 3
 
 DISTRO=`cat /etc/*release | grep DISTRIB_ID | cut -d '=' -f 2` # gets distro name
@@ -90,27 +97,27 @@ WINEPREFIX=$PREFIX
 fi
 fi
 
-echo "The URI for Tadah will now be made. "
+echo "The URI for Placeholder will now be made. "
 sleep 1
-touch tadah.desktop
-echo "[Desktop Entry]" >> tadah.desktop
-echo "Name=Tadah Player" >> tadah.desktop
-echo "Comment=https://tadah.rocks/" >> tadah.desktop
-echo "Type=Application" >> tadah.desktop
-echo "Exec=wine $PREFIX/drive_c/users/$USER/AppData/Local/Tadah/2014/TadahLauncher.exe -token %u" >> tadah.desktop
-echo "MimeType=x-scheme-handler/tadahfourteen" >> tadah.desktop
-sudo mv tadah.desktop /usr/share/applications
+touch placeholder.desktop
+echo "[Desktop Entry]" >> placeholder.desktop
+echo "Name=Placeholder Player" >> placeholder.desktop
+echo "Comment=https://placeholder16.tk/" >> placeholder.desktop
+echo "Type=Application" >> placeholder.desktop
+echo "Exec=wine $PREFIX/drive_c/users/$USER/AppData/Roaming/Placeholder/PlaceholderLauncher.exe %u" >> placeholder.desktop
+echo "MimeType=x-scheme-handler/placeholder2016" >> placeholder.desktop
+sudo mv placeholder.desktop /usr/share/applications
 sudo update-desktop-database
-cat /usr/share/applications/tadah.desktop
+cat /usr/share/applications/placeholder.desktop
 
 echo "winecfg will now open. Set the OS to be Windows 10. "
 sleep 3
 WINEPREFIX=$PREFIX winecfg
 
-echo "The script will now install Tadah."
+echo "The script will now install Placeholder. Don't change the install location, otherwise URI won't work. " 
 sleep 3
-wget -nc https://cdn.discordapp.com/attachments/896484783180382222/962901711763144714/TadahFourteen.exe
-WINEPREFIX=$PREFIX wine TadahFourteen.exe
+wget -nc https://placeholder16.tk/setup/PlaceholderInstaller.exe
+WINEPREFIX=$PREFIX wine PlaceholderInstaller.exe
 
 if [ "$1" == "dxvk" ] || [ "$2" == "dxvk" ]
 then
@@ -125,8 +132,8 @@ rm dxvk-1.10.1.tar.gz
 rm dxvk-1.10.1 -rf
 fi
 
-echo "The script has installed Tadah. Play a game and it should work! "
+echo "The script has installed Placeholder. Play a game and it should work! "
 echo "If there are any problems, DM me on Discord. DarDarDar#3429. "
-rm TadahFourteen.exe
+rm PlaceholderInstaller.exe
 exit
 
