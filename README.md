@@ -1,10 +1,10 @@
-# Wineorc v1.5
+# Wineorc v1.6
 Some simple Shell scripts to setup ORC revivals semi-automatically on Linux.
 
 These scripts are not supported in any way, shape or form by the official devs of these revivals.
 
 # What this does
-This script will download dependencies, register URI and install the revival of choice. It can also install DXVK, use/make a custom Wineprefix (tadah only) and uninstall the revival of choice.
+This script will download dependencies, register URI and install the revival of choice. It can also install DXVK, use/make a custom Wineprefix (tadah and placeholder only) and uninstall the revival of choice.
 
 # Dependencies
 The needed packages are:
@@ -26,6 +26,7 @@ If you aren't, install them manually via your package manager.
 4. Depending on which revival you want to install, run the following commands:
 - `./tadah-helper.sh` for Tadah
 - `./itteblox-helper.sh` for Itteblox
+- `./placeholder-helper.sh` for Placeholder
 5. Once installed, play a game and it should work!
 
 If you want to install DXVK alongside the revival, run the script with the parameter "dxvk".
@@ -49,9 +50,13 @@ Itteblox 2013 studio doesn't work
 
 Itteblox 2016 locks the mouse after either the right mouse button or shift lock is activated 
 
-(these two are probably unfixable, sadly)
+Placeholder Installer is a bit wonky (uninstaller seems to not work)
+
+(these three are probably unfixable, sadly)
 
 # Credits
 calones for helping me, and putting up with me being dumb
 
-itteh and kinery for making great revivals
+thexkey for helping me alot making the Placeholder helper
+
+itteh, kinery and thexkey for making great revivals
