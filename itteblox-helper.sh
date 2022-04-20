@@ -94,7 +94,7 @@ winecfg
 
 echo "The script will now install ItteBlox. After you are done with ItteBloxURI.exe, press CTRL+C to close it. "
 sleep 3
-wget -nc https://cdn.discordapp.com/attachments/876914292488826880/921519263108456448/itteblox.zip
+wget -nc https://cdn.discordapp.com/attachments/876914292488826880/966405305409884290/ItteBlox.zip
 mkdir itteblox
 mv itteblox.zip itteblox
 cd itteblox
