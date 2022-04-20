@@ -3,7 +3,7 @@
 
 if [ "$1" == "uninstall" ] || [ "$1" == "uninstaller" ]
 then
-echo "Uninstalling Itteblox in 3 seconds... "
+echo "Uninstalling ItteBlox in 3 seconds... "
 sleep 3
 rm $HOME/itteblox -rf
 sudo rm /usr/share/applications/itteblox.desktop
@@ -12,7 +12,7 @@ echo "Uninstallation done. Run the script like normal if you'd like to reinstall
 exit
 fi
 
-echo "This is the Itteblox Installer helper, v1.6. "
+echo "This is the ItteBlox Installer helper, v1.6. "
 echo "Before installation begins, some dependencies need to be installed. If anything prompts for a password, enter it, and if there's a yes/no answer, enter yes. "
 sleep 3
 
@@ -62,12 +62,12 @@ then
 sudo emerge --ask virtual/wine-staging net-misc/wget
 fi
 
-echo "The URI for Itteblox will now be made. "
+echo "The URI for ItteBlox will now be made. "
 sleep 1
 touch itteblox.desktop
 echo "[Desktop Entry]" >> itteblox.desktop
 echo "Name=Itteblox Player" >> itteblox.desktop
-echo "Comment=https://ittblox.ml/" >> itteblox.desktop
+echo "Comment=https://ittblox.gay/" >> itteblox.desktop
 echo "Type=Application" >> itteblox.desktop
 echo "Exec=wine $HOME/itteblox/ItteBloxLauncher.exe %u" >> itteblox.desktop
 echo "MimeType=x-scheme-handler/itblox" >> itteblox.desktop
@@ -92,7 +92,7 @@ echo "winecfg will now open. Set the OS to be Windows 10. "
 sleep 3
 winecfg
 
-echo "The script will now install Itteblox. After you are done with ItteBloxURI.exe, press CTRL+C to close it. "
+echo "The script will now install ItteBlox. After you are done with ItteBloxURI.exe, press CTRL+C to close it. "
 sleep 3
 wget -nc https://cdn.discordapp.com/attachments/876914292488826880/921519263108456448/itteblox.zip
 mkdir itteblox
@@ -102,7 +102,6 @@ unzip itteblox.zip
 rm itteblox.zip
 wine ItteBloxURI.exe
 
-echo "The script has installed Itteblox. Play a game and it should work! "
+echo "The script has installed ItteBlox. Play a game and it should work! "
 echo "If there are any problems, DM me on Discord. DarDarDar#3429. "
 exit
-
