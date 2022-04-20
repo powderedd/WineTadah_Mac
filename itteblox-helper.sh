@@ -67,7 +67,7 @@ sleep 1
 touch itteblox.desktop
 echo "[Desktop Entry]" >> itteblox.desktop
 echo "Name=Itteblox Player" >> itteblox.desktop
-echo "Comment=https://ittblox.cf/" >> itteblox.desktop
+echo "Comment=https://ittblox.gay/" >> itteblox.desktop
 echo "Type=Application" >> itteblox.desktop
 echo "Exec=wine $HOME/itteblox/ItteBloxLauncher.exe %u" >> itteblox.desktop
 echo "MimeType=x-scheme-handler/itblox" >> itteblox.desktop
