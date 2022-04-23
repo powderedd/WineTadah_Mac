@@ -1,4 +1,4 @@
-# Wineorc v1.6
+# WineTadah Mac v1.6
 Some simple Shell scripts to setup ORC revivals semi-automatically on Linux.
 
 These scripts are not supported in any way, shape or form by the official devs of these revivals.
@@ -8,10 +8,10 @@ This script will download dependencies, register URI and install the revival of 
 
 # Dependencies
 The needed packages are:
-- sudo (probably installed on most systems already, but if not please install it, because even with a supported distro the script won't install it for you)
-- The latest wine (obv, preferably wine-staging)
-- wget
-- unzip (for Itteblox only)
+- sudo (installed on most macs)
+- The latest wine (get it from)
+- wget (also installed on most macs)
+- unzip (probably installed on most macs, idk)
 
 If you are running any form of Ubuntu (that includes Linux Mint and PopOS), Manjaro, Fedora or Gentoo the script will automatically install the dependencies for you.
 
@@ -25,8 +25,8 @@ If you aren't, install them manually via your package manager.
 3. Run `chmod +x *.sh` (which will make all Shell files in that directory executable)
 4. Depending on which revival you want to install, run the following commands:
 - `./tadah-helper.sh` for Tadah
-- `./itteblox-helper.sh` for Itteblox
-- `./placeholder-helper.sh` for Placeholder
+- `./itteblox-helper.sh` for Itteblox (NOT FINISHED)  
+- `./placeholder-helper.sh` for Placeholder (NOT FINISHED)  
 5. Once installed, play a game and it should work!
 
 If you want to install DXVK alongside the revival, run the script with the parameter "dxvk".
