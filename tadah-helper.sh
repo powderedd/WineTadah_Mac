@@ -29,8 +29,6 @@ echo "This is the Tadah Installer helper, v1.6. "
 echo "Before installation begins, some dependencies need to be installed. If anything prompts for a password, enter it, and if there's a yes/no answer, enter yes. "
 sleep 3
 
-DISTRO=`cat /etc/*release | grep DISTRIB_ID | cut -d '=' -f 2` # gets distro name
-
 
 echo "The URI for Tadah will now be made. "
 sleep 1
